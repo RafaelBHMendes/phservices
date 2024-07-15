@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-logo {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-tagline {
+  font-family: 'Pacifico', cursive;
+}
+
+.bg-hero-pattern {
+  background-image: url('src/assets/bg-image.png'); /* Substitua por uma URL real */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
