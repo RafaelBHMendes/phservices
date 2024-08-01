@@ -17,7 +17,7 @@ body {
 }
 
 .bg-hero-pattern {
-  background-image: url('src/assets/bg-image.png'); /* Substitua por uma URL real */
+  background-image: url('/bg-image.png'); /* Substitua por uma URL real */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
