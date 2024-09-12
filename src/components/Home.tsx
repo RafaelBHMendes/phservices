@@ -6,41 +6,34 @@ import Footer from './Footer'
 import About from './About'
 import Contact from './Contact'
 
+import alquimia from '../../public/alquimia.png'
+import taxi from '../../public/taxi.jpeg'
+import pc from '../../public/pc.png'
+import iptv from '../../public/iptv.png'
+
 const services = [
   {
     name: 'Computadores',
-    link: 'https://computadores.seudominio.com',
-    image: 'https://via.placeholder.com/400x200',
+    link: 'https://api.whatsapp.com/send?phone=558896700101',
+    image: pc,
     description: 'Serviços de venda e manutenção de computadores.'
   },
   {
     name: 'Táxi',
-    link: 'https://taxi.seudominio.com',
-    image: 'https://via.placeholder.com/400x200',
+    link: 'https://api.whatsapp.com/send?phone=558892676242',
+    image: taxi,
     description: 'Serviço de táxi disponível 24 horas.'
   },
   {
-    name: 'Jóias (alquimia Brazil)',
-    link: 'https://joias.seudominio.com',
-    image: 'https://via.placeholder.com/400x200',
+    name: 'Jóias (alquimia sobral)',
+    link: 'https://www.instagram.com/alquimiasobral/',
+    image: alquimia,
     description: 'Jóias exclusivas e personalizadas.'
   },
   {
-    name: 'Veículos e serviços',
-    link: 'https://veiculos.seudominio.com',
-    image: 'https://via.placeholder.com/400x200',
-    description: 'Compra e venda de veículos novos e usados.'
-  },
-  {
-    name: 'Caixa aqui',
-    link: 'https://caixaaqui.seudominio.com',
-    image: 'https://via.placeholder.com/400x200',
-    description: 'Serviços bancários rápidos e práticos.'
-  },
-  {
     name: 'IPTV (Top TV)',
-    link: 'https://iptv.seudominio.com',
-    image: 'https://via.placeholder.com/400x200',
+    link: 'https://sites.google.com/view/toptvdigital/p%C3%A1gina-inicial',
+    image: iptv,
     description: 'Os melhores canais de TV via internet.'
   }
 ]
@@ -59,13 +52,7 @@ const Home: React.FC = () => {
         </h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {services.map(service => (
-            <ServiceCard
-              key={service.name}
-              name={service.name}
-              link={service.link}
-              image={service.image}
-              description={service.description}
-            />
+            <ServiceCard key={service.name} name={service.name} link={service.link} image={service.image} description={service.description} />
           ))}
         </div>
         <section id='contact' className='my-8'>

@@ -9,9 +9,7 @@ const HeroSection: React.FC = () => {
           <span className='header-logo'>PHD</span>
           <span className='header-tagline'>esenrola</span>
         </h1>
-        <p className='text-xl mb-8'>
-          Encontre os melhores serviços em um só lugar
-        </p>
+        <p className='text-xl mb-8'>Encontre os melhores serviços em um só lugar</p>
         <a href='#services' className='btn btn-primary'>
           Veja nossos serviços
         </a>
